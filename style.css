@@ -22,7 +22,7 @@ body {
     transform: scale(1.03);
 }
 
-.heading-text h1{
+.heading-text h1 {
     font-family: truenoround;
     display: flex;
     justify-content: center;
@@ -50,26 +50,47 @@ body {
     }
 }
 
-.color-line {
+.color-line{
     color: #9b27f9;
 }
 
-.container{
+.line::before {
+    content: "to";
+    animation: verb infinite 5s;
+
+}
+
+@keyframes verb {
+
+    0% {
+        content: "to";
+    }
+
+    50% {
+        content: "from";
+    }
+
+    75% {
+        content: "from";
+    }
+}
+
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.item{
+.item {
     margin: 10px;
     text-align: center;
 }
 
-.item h2{
+.item h2 {
     font-family: truenoround;
 }
 
-.wedding{
+.wedding {
     display: flex;
     justify-content: center;
 }
