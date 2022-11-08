@@ -6,6 +6,7 @@
 body {
     background-image: url(Images/bg.jpg);
     background-size: cover;
+    background-repeat: repeat-x repeat-y;
 }
 
 .heading-image {
@@ -127,4 +128,26 @@ h1, h2{
     .rest-img{
         width: 250px;
     }
+}
+
+.heading-image{
+    transition: all .5s ease-in-out;
+}
+
+.front{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back{
+    backface-visibility: hidden;
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.heading-image:hover > .front{
+    transform: perspective(1000px) rotateY(-180deg);
+}
+
+.heading-image:hover > .back{
+    transform: perspective(1000px) rotateY(0deg);
 }
