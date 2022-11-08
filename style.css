@@ -94,3 +94,37 @@ body {
     display: flex;
     justify-content: center;
 }
+
+h1, h2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-img{
+    width: 500px;
+}
+
+.rest-img{
+    width: 400px;
+}
+
+@media (max-width: 600px) {
+    .main-img{
+        width: 400px;
+    }
+    
+    .rest-img{
+        width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-img{
+        width: 300px;
+    }
+    
+    .rest-img{
+        width: 250px;
+    }
+}
